@@ -1,0 +1,803 @@
+#container {
+	/*this is to provide equality to the html elements such as margins, padding, etc*/
+	width: 100%;
+	border: 1px solid grey;
+}
+
+#footer {
+	padding: 1em;
+	color: white;
+	background-color: black;
+	clear: left;
+	text-align: center;
+	bottom: 105%;
+	left: 60%;
+	height: 6%;
+	width: 100%;
+}
+
+nav {
+	/*This is to control the navigation bar in the div tag on everypage*/
+	float: left;
+	max-width: 100%;
+	margin: 0;
+	padding: 1em;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul a {
+	text-decoration: none;
+}
+
+article {
+	margin-left: 2%;
+	/*this is set to the the position of article to left or right*/
+	margin-bottom: 20%;
+	border-left: 1% solid gray;
+	padding: 7em;
+	overflow: hidden;
+}
+
+#title {
+	/*This is to control the title of every page in the div tag on all the pages*/
+	width: 4;
+	height: 4;
+	padding: 0;
+	/*this is used to generate the space for the html elemnets that are inside the borders*/
+	color: black;
+	background-color: lightgreen;
+	clear: center;
+	text-align: center;
+}
+
+#Logo {
+	/*This is to control the logo in the div tag on every page*/
+	position: absolute;
+	width: 442px;
+	height: 82px;
+	left: 10px;
+	top: 2px;
+}
+
+#nav {
+	padding: 30;
+	width: 95%;
+	/*this is set the width of navigation bar*/
+	height: 10%;
+	/*this is set the height of navigation bar*/
+	position: absolute;
+	top: 20%;
+	/*this is set to the the position of bar to top or bottom*/
+	left: 35%;
+	/*this is set to the the position of bar to left or right*/
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#home {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	z-index: 4;
+	left: 5%;
+	/*this is set to the the position of button to left or right*/
+	top: 15%;
+	/*this is set to the the position of button to top to bottom*/
+}
+
+#aboutus {
+	position: absolute;
+	width: 130px;
+	height: 60px;
+	z-index: 5;
+	left: 15%;
+	/*this is set to the the position of button to left or right*/
+	top: 15%;
+	/*this is set to the the position of button to top or bottom*/
+}
+
+#men {
+	position: absolute;
+	width: 161px;
+	height: 82px;
+	z-index: 6;
+	left: 26%;
+	/*this is set to the the position of button to left or right*/
+	top: 18%;
+	/*this is set to the the position of button to top or bottom*/
+}
+
+#women {
+	position: absolute;
+	width: 161%;
+	height: 82%;
+	z-index: 6;
+	left: 40%;
+	/*this is set to the the position of button to left or right*/
+	top: 18%;
+	/*this is set to the the position of button to top or bottom*/
+}
+
+#kids {
+	position: absolute;
+	width: 161%;
+	height: 82%;
+	z-index: 6;
+	left: 55%;
+	/*this is set to the the position of button to left or right*/
+	top: 18%;
+	/*this is set to the the position of button to top or bottom*/
+}
+
+#fran {
+	position: absolute;
+	width: 161%;
+	height: 82%;
+	z-index: 6;
+	left: 69%;
+	/*this is set to the the position of button to left or right*/
+	top: 18%;
+	/*this is set to the the position of button to top or bottom*/
+}
+
+#contact {
+	position: absolute;
+	width: 161%;
+	height: 82%;
+	z-index: 6;
+	left: 83%;
+	/*this is set to the the position of button to left or right*/
+	top: 18%;
+	/*this is set to the the position of button to top or bottom*/
+}
+
+#registration {
+	width: 12%;
+	height: 12%;
+	position: absolute;
+	top: 3.5%;
+	/*this is set to the the position of button to top or bottom*/
+	right: 1%;
+	/*this is set to the the position of button to left or right*/
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#login {
+	width: 12%;
+	height: 12%;
+	position: absolute;
+	top: 3.5%;
+	/*this is set to the the position of button to top or bottom*/
+	right: 7%;
+	/*this is set to the the position of button to left or right*/
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#img_1 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 6%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_2 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 6%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_3 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 25%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_4 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 25%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_5 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 45%;
+	/*this is set to the the position of image to left or right*/
+	top: 46%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_6 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 45%;
+	/*this is set to the the position of image to left or right*/
+	top: 68%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#video_1 {
+	position: absolute;
+	width: 50%;
+	height: 82%;
+	z-index: 1;
+	left: 60%;
+	/*this is set to the the position of video to left or right*/
+	top: 50%;
+	/*this is set to the the position of video to top or bottom*/
+}
+
+
+/* about us */
+#buttons {
+	position: absolute;
+	width: 161%;
+	height: 82%;
+	z-index: 6;
+	left: 50%;
+	/*this is set to the the position of image to left or right*/
+	top: 75%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+/* men */
+#img_7 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 6%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_8 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 6%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_9 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 25%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_10 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 25%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_11 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 42%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_12 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 42%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_13 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 58%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_14 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 58%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_15 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 72%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_16 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 72%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_17 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 84%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_18 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 86%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+/* women */
+#img_19 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 6%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_20 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 6%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_21 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 25%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_22 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 25%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_23 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 42%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_24 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 42%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_25 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 52%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_26 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 52%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_27 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 72%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_28 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 72%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_29 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 86%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_30 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 86%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+/* kids */
+#img_31 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 6%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_32 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 6%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_33 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 25%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_34 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 25%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_35 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 42%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_36 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 42%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_37 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 58%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_38 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 58%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_39 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 72%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_40 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 72%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_41 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 84%;
+	/*this is set to the the position of image to left or right*/
+	top: 48%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+#img_42 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 84%;
+	/*this is set to the the position of image to left or right*/
+	top: 70%;
+	/*this is set to the the position of image to top or bottom*/
+}
+
+franchises #add_1 {
+	position: absolute;
+	width: 415px;
+	height: 20px;
+	z-index: 10;
+	left: 10%;
+	/*this is set to the the position of text to left or right*/
+	top: 50%;
+	/*this is set to the the position of the text to top or bottom*/
+	background-color: #99FF66;
+}
+
+#add_2 {
+	position: absolute;
+	width: 416px;
+	height: 20px;
+	z-index: 11;
+	left: 10%;
+	/*this is set to the the position of text to left or right*/
+	top: 60%;
+	/*this is set to the the position of the text to top or bottom*/
+	background-color: #33FF99;
+}
+
+#add_3 {
+	position: absolute;
+	width: 418px;
+	height: 20px;
+	z-index: 9;
+	left: 10%;
+	/*this is set to the the position of text to left or right*/
+	top: 70%;
+	/*this is set to the the position of the text to top or bottom*/
+	background-color: #FF6699;
+}
+
+#video_2 {
+	position: absolute;
+	width: 600%;
+	height: 82%;
+	z-index: 1;
+	left: 55%;
+	/*this is set to the the position of video to left or right*/
+	top: 35%;
+	/*this is set to the the position of the video to top or bottom*/
+}
+
+contact us #map {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 2%;
+	/*this is set to the the position of map to left or right*/
+	top: 35%;
+	/*this is set to the the position of the map to top or bottom*/
+}
+
+#form {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 48%;
+	/*this is set to the the position of form to left or right*/
+	top: 25%;
+	/*this is set to the the position of the form to top or bottom*/
+}
+
+#address_1 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 65%;
+	/*this is set to the the position of form to left or right*/
+	top: 30%;
+	/*this is set to the the position of the form to top or bottom*/
+}
+
+#name_1 {
+	position: absolute;
+	width: 442px;
+	height: 82px;
+	z-index: 1;
+	left: 54%;
+	/*this is set to the the position of name to left or right*/
+	top: 38%;
+	/*this is set to the the position of the name to top or bottom*/
+}
+
+#address_2 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 82%;
+	/*this is set to the the position of address to left or right*/
+	top: 30%;
+	/*this is set to the the position of address to top or bottom*/
+}
+
+#name_2 {
+	position: absolute;
+	width: 442px;
+	height: 82px;
+	z-index: 1;
+	left: 70%;
+	/*this is set to the the position of name to left or right*/
+	top: 38%;
+	/*this is set to the the position of name to top or bottom*/
+}
+
+#address_3 {
+	position: absolute;
+	width: 442%;
+	height: 82%;
+	z-index: 1;
+	left: 75%;
+	/*this is set to the the position of address to left or right*/
+	top: 50%;
+	/*this is set to the the position of address to top or bottom*/
+}
+
+#name_3 {
+	position: absolute;
+	width: 442px;
+	height: 82px;
+	z-index: 1;
+	left: 63%;
+	/*this is set to the the position of name to left or right*/
+	top: 58%;
+	/*this is set to the the position of name to top or bottom*/
+}

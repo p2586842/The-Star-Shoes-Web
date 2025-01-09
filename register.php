@@ -1,64 +1,52 @@
-<?php>
-$firstname = $_POST ['firstname'];
-$surname = $_POST ['surname'];
-$e-mail = $_POST ['e-mail'];
-$confirm e-mail = $_POST ['confirm e-mail'];
-$password = $_POST ['password'];
-$re-password = $_POST ['re-password'];
+<?php
 
-if (!empty ($firstname) || !empty($surname) || !empty($e-mail) || !empty($confirm e-mail) || !empty($password) ||
-!empty($re-password))
-{
-	$host = "localhost";
-	$dbUsername = "root";
-	$dbpassword = "";
-	$dbname = "company";
-	
-	// connection between web page and database
-	$conn = new mysqli($host, $dbUsername, $dbpassword, $dbname);
-	
-	//if any error appear here
-	if (mysqli_connect_error())
-	{
-		die ('connect error('.mysqli_connect_error().')'.mysqli_connect_error());
-	}
-	else
-	{
-		$SELECT = "SELECT email from register where email = ? Limit 1"; //choose email because they are unique
-		$INSERT = "INSERT Into register (firstname, surname, email, confirm e-mail, password, re-password) values (?, ?, ?, ?, ?, ?)";
-		
-		//prepare statement
-		$stmt = $conn->prepare($SELECT);
-		$stmt->bind_oaram("s", $email);
-		$stmt->execute();
-		$stmt->bind_result($email);
-		$stmt->store_result();
-		$rnum = $stmt->num_rows;
-		
-		if ($rnum ==0)
-		{
-			$stmt->close();
-			
-			$stmt = $conn->prepare($INSERT);
-			$stmt->bind_param("ssssii", $firstname, $surname, $e-mail, $confirme e-mail, $password, $re-password);
-			$stmt->execute();
-			
-			echo "New Record inserted succesfully";
-			
-		}
-		else
-		{
-			echo "Someone already register using this email";
-		}
-		$stmt->close();
-		$conn->close();
-	
-	
-	}
-else
-{
+$username = $_POST ['username'];
+$password = $_POST ['password'];
+$password_confirmation = $_POST ['password_confirmation'];
+
+if (empty($username) || empty($password) || empty($password_confirmation)) {
 	echo "All fields are required";
 	die();
 }
 
-?>
+if ($password !== $password_confirmation) {
+	echo "Passwords do not match!";
+	die();
+}
+
+require_once($_SERVER['DOCUMENT_ROOT'] . "/partials/db-info.php");
+
+// connection between web page and database
+$conn = new mysqli($host, $dbUsername, $dbpassword, $dbname);
+
+//if any error appear here
+if ($conn->connect_errno) {
+	die ('connect error('.mysqli_connect_error().')'.mysqli_connect_error());
+}
+
+$SELECT = "SELECT username from users where username = ? Limit 1"; //choose username because they are unique
+$INSERT = "INSERT Into users (username, password) values (?, ?)";
+
+//prepare statement
+$stmt = $conn->prepare($SELECT);
+$stmt->bind_param("s", $username);
+$stmt->execute();
+$stmt->bind_result($username);
+$stmt->store_result();
+$rnum = $stmt->num_rows;
+
+if ($rnum == 0) {
+	$stmt->close();
+	
+	$stmt = $conn->prepare($INSERT);
+	$stmt->bind_param('ss', $username, md5($password));
+	$stmt->execute();
+	
+	echo "New user account created succesfully!";
+	
+} else {
+	echo "This username is already taken!";
+}
+
+$stmt->close();
+$conn->close();
